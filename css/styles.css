@@ -15,11 +15,12 @@ h1, h2, h3 {
 h2 {
     padding-top: 20px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 h3 {
     font-weight: bold;
     font-style: italic;
+    font-size: 20px;
     text-decoration: underline;
 
 }
@@ -44,7 +45,7 @@ a:hover {
     text-align: left;
 }
 .title {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -101,7 +102,7 @@ a:hover {
 .underline {
     border-top: 4px solid #000;
     border-radius: 2px;
-    width: 100px;
+    width: 50px;
     margin-left: 20px;
 }
 .underline-subsection {
