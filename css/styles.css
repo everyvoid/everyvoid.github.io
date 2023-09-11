@@ -99,10 +99,10 @@ a:hover {
     font-style: italic;
 }
 .underline {
-    border-top: 5px solid #000;
-    border-radius: 3px;
+    border-top: 4px solid #000;
+    border-radius: 2px;
     width: 100px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .underline-subsection {
   border-top: 3px solid #000;
