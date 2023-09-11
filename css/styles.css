@@ -10,7 +10,7 @@ header {
     text-align: left;
 }
 h1, h2, h3 {
-    font-family: "Helvetica", sans-seric;
+    font-family: "Montserrat", sans-seric;
 }
 h2 {
     padding-top: 20px;
@@ -38,11 +38,22 @@ a:hover {
 }
 .container {
     padding: 20px 0;
-    padding-left: 20px;
-    padding-right: 20px;
     /* padding-left: 10%; */
     /* padding-right: 10%; */
     text-align: left;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 .title {
     font-size: 50px;
@@ -100,10 +111,11 @@ a:hover {
     font-style: italic;
 }
 .underline {
-    border-top: 4px solid #000;
+    border-top: 3px solid #000;
     border-radius: 2px;
     width: 50px;
     margin-left: 20px;
+    margin-top: -10px;
 }
 .underline-subsection {
   border-top: 3px solid #000;
