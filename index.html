@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Iurevici</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="font-size: 80px; font-weight: bold; margin-top: 2.5%">Igor Iurevici</h1>
+            <h1 style="font-size: 60px; font-weight: bold;">VR Developer</h1>
+            <hr class="underline">
+        </header>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>About</h2>
+            <p>
+                Hello world, my name is Igor Iurevici. <br/>
+                I'm a VR developer passionate about creating bizzare immersive virtual experiences.
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>
+              Below a deep dive into my main projects I'm most proud of.
+            </p>
+            <!-- Divergences -->
+            <section class="subsection">
+                <h3 class="collapsible">Divergences</h3>
+                <div class="dropdown">
+                <!--<hr class="underline-subsection">-->
+                    <div class="project-details">
+                        <p>
+                            The 
+                            <a href="https://www.divergences.it" target="_blank">Divergences</a> project is an artistic work started by the visual artist 
+                            <a href="http://sassofederica.com" target="_blank">Federica Sasso</a> and sound deisgner 
+                            <a href="https://www.lucapagan.info" target="_blank">Luca Pagan</a>, with the collaboration of the 
+                            <a href="https://rehab.iit.it" target="_blank">Rehab Technology Lab</a> of 
+                            <a href="https://www.iit.it/en-US/" target="_blank">Italian Institute of Technology</a>. <br/>
+                            It consists in immersing the test user with a prosthetic leg in an infinite corridor environment
+                            with four different setups. For each setup the user experiences different footsteps sound triggered by
+                            devices able to detect pressure.
+                            The virtual environment, empowered by the sound system, aims to explore the connection between the body, sound impulses and digital reality.<br/>
+                            An exhibition of the project occured at 
+                            <a href="https://ars.electronica.art/festival/en/" target="_blank">Ars Electronica Festival</a> 2023.
+                      </p>
+                    </div>
+                    <div class="project-images">
+                        <img src="./images/divergences_set.jpeg" alt="Project 1" onclick="expandImage(this)">
+                        <img src="./images/divergences_corridor3.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/divergences_corridor3.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/divergences_corridor3.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                    </div>
+                    <p class="caption">Pictures from the registration set and screen captures of the experience</p>
+                </div>
+            </section>
+
+            <!-- Embodiment -->
+            <section class="subsection">
+                <h3 class="collapsible">Embodiment</h3>
+                <div class="dropdown">
+                  <!--<hr class="underline-subsection">-->
+                    <div class="project-details">
+                        <p>Embodiment: Brief description of project 2.</p>
+                    </div>
+                    <div class="project-images">
+                        <img src="./images/test.jpeg" alt="Project 1" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                    </div>
+                </div>
+            </section>
+
+            <!-- UEVR -->
+            <section class="subsection">
+                <h3 class="collapsible">UEs in VR</h3>
+                <div class="dropdown">
+                  <!--<hr class="underline-subsection">-->
+                    <div class="project-details">
+                        <p>UEVR: Brief description of project 3.</p>
+                    </div>
+                    <div class="project-images">
+                        <img src="./images/test.jpeg" alt="Project 1" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                    </div>
+                </div>
+            </section>
+
+            <!-- BoloFence -->
+            <section class="subsection">
+                <h3 class="collapsible">BoloFence</h3>
+                <div class="dropdown">
+                  <!--<hr class="underline-subsection">-->
+                    <div class="project-details">
+                        <p>BoloFence: Brief description of project 4.</p>
+                    </div>
+                    <div class="project-images">
+                        <img src="./images/test.jpeg" alt="Project 1" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                        <img src="./images/test.jpeg" alt="Project 2" onclick="expandImage(this)">
+                    </div>
+                </div>
+            </section>
+
+        <!-- CONTACTS -->
+        <section class="contact">
+            <h2>Contacts</h2>
+            <a href="mailto:igor.iurevici95@gmail.com" target="_blank">Email</a> |
+            <a href="https://linkedin.com/in/igor.iurevici" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/everyvoid" target="_blank">GitHub</a>
+        </section>
+
+        <!-- Image overlay for expanding images -->
+        <div class="image-overlay" id="imageOverlay">
+            <img src="" alt="Expanded Image" id="expandedImage">
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPTS -->
+    <script>
+        function expandImage(image) {
+            var imageOverlay = document.getElementById("imageOverlay");
+            var expandedImage = document.getElementById("expandedImage");
+
+            // Display the overlay and the clicked image
+            imageOverlay.style.display = "block";
+            expandedImage.src = image.src;
+
+            // Close the overlay when clicking on it
+            imageOverlay.onclick = function () {
+                imageOverlay.style.display = "none";
+            };
+        }
+        
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        } 
+    </script>
