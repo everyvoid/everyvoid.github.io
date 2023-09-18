@@ -138,3 +138,19 @@ a:hover {
 .collapsible:hover {
   color: #c30010;
 }
+.tag {
+    font-size: 12px;
+    font-style: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #333; /* Blackish background */
+    color: #fff; /* Whitish font color */
+}
+.tag-container {
+    display: flex;
+    align-items: center;
+    float: right;
+    text-align: right; 
+}
