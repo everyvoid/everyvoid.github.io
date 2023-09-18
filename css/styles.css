@@ -143,14 +143,12 @@ a:hover {
     font-style: normal;
     display: inline-block;
     padding: 5px 10px;
-    margin-right: 5px;
     border-radius: 10px;
+    margin-top: 10px;
     background-color: #333; /* Blackish background */
     color: #fff; /* Whitish font color */
 }
 .tag-container {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    float: right;
-    text-align: right; 
 }
