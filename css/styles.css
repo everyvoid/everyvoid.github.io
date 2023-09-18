@@ -150,3 +150,21 @@ a:hover {
     display: inline-block;
     align-items: center;
 }
+.code-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #fff; /* Inverted background color */
+  color: #333; /* Inverted text color */
+  box-shadow: 0 0 0 1px #333; /* Matching outline using box-shadow */
+}
+.code-link:hover {
+  box-shadow: 0 0 0 2px #c33010;
+  color: #c33010;
+  text-decoration: none;
+  font-weight: bold;
+}
