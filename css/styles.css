@@ -152,7 +152,7 @@ a:hover {
 }
 .code-link {
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 12px;
   display: inline-block;
   padding: 5px 10px;
