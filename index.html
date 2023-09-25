@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link preview -->
     <meta property="og:title" content="Igor Iurevici">
     <meta property="og:site_name" content="igor-iurevici.github.io">
     <meta property="og:url" content="https://igor-iurevici.github.io">
@@ -22,7 +21,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
     <link rel="manifest" href="/images/favicons/site.webmanifest">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -30,15 +28,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- TITLE -->
         <header>
             <h1 class="title">Igor • Iurevici</h1>
             <!-- yeah this is ugly :( -->
             <div class="subsection" style="margin-top: -35px"></div>
             <hr class="underline">
         </header>
-
-        <!-- ABOUT -->
         <section class="about">
             <h2>About</h2>
             <p>
@@ -47,15 +42,11 @@
                 I like to try and explore new XR tech - but also pixel art and live coding.
             </p>
         </section>
-
-        <!-- PROJECTS -->
         <section class="projects">
             <h2>Projects</h2>
             <p>
               The ones I'm most proud of.
             </p>
-            
-            <!-- UEVR -->
             <section class="subsection">
                 <h3 class="collapsible">UEs in VR</h3>
                 <div class="dropdown">
@@ -85,8 +76,6 @@
                     <span class="tag">HTC Vive Pro</span>
                 </div>
             </section>
-
-            <!-- Divergences -->
             <section class="subsection">
                 <h3 class="collapsible">Divergences</h3>
                 <div class="dropdown">
@@ -122,8 +111,6 @@
                     <span class="tag">Quest 2</span>
                 </div>
             </section>
-
-            <!-- BoloFence -->
             <section class="subsection">
                 <h3 class="collapsible">BoloFence</h3>
                 <div class="dropdown">
@@ -152,8 +139,6 @@
                     <span class="tag">Java</span>
                 </div>
             </section>
-
-            <!-- Antikythera -->
             <section class="subsection">
                 <h3 class="collapsible">Embodiment</h3>
                 <div class="dropdown">
@@ -187,8 +172,6 @@
                     <span class="tag">Quest 2</span>
                 </div>
             </section>
-
-            <!-- Annnotator -->
             <section class="subsection">
                 <h3 class="collapsible">Annotator</h3>
                 <div class="dropdown">
@@ -209,22 +192,17 @@
                 </div>
             </section>
         </section>
-
-        <!-- CONTACTS -->
         <section class="contact">
             <h2>Contacts</h2>
             <a href="mailto:igor.iurevici95@gmail.com" target="_blank">Email</a> |
             <a href="https://linkedin.com/in/igor-iurevici" target="_blank">LinkedIn</a> |
             <a href="https://github.com/igor-iurevici" target="_blank">GitHub</a>
         </section>
-
-        <!-- Image overlay for expanding images -->
         <div class="image-overlay" id="imageOverlay">
             <img src="" alt="Expanded Image" id="expandedImage">
         </div>
     </div>
 
-    <!-- SCRIPTS -->
     <script>
         function expandImage(image) {
             var imageOverlay = document.getElementById("imageOverlay");
