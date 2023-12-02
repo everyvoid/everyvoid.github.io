@@ -12,13 +12,13 @@ document.body.appendChild( renderer.domElement );
 
 
 // Geometry
-const geometry = new THREE.TorusGeometry( 10, 4, 16, 50 );
-const material = new THREE.MeshBasicMaterial( { color: 0x111111, wireframe: true, transparent: true, opacity: 0.1} );
+const geometry = new THREE.TorusGeometry( 10, 4, 16, 25 );
+const material = new THREE.MeshBasicMaterial( { color: 0x111111, wireframe: true, transparent: true, opacity: 0.05} );
 const torus = new THREE.Mesh( geometry, material );
 scene.add( torus );
 
 camera.position.z = 10;
-camera.position.x = 10;
+camera.position.x = 5;
 camera.position.y = 10;
 
 
@@ -26,8 +26,11 @@ camera.position.y = 10;
 function animate() {
   requestAnimationFrame( animate );
 
-  torus.rotation.x += 0.001;
-  torus.rotation.y += 0.001;
+  torus.rotation.x += 0.0005;
+  torus.rotation.y += 0.0005;
+
+  if (torus.position.x >= 10) torus.position.x -= 0.005;
+  else torus.position.x += 0.005;
  
   renderer.render( scene, camera );
 }
