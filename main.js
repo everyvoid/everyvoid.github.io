@@ -13,10 +13,12 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 
 // Geometry
-const geometry = new THREE.TorusGeometry( 10, 4, 16, 25 );
-const material = new THREE.MeshBasicMaterial( { color: 0x111111, wireframe: true, transparent: true, opacity: 0.05} );
-const torus = new THREE.Mesh( geometry, material );
-scene.add( torus );
+const geometry = new THREE.TorusGeometry( 10, 4, 16, 100 );
+const materialMesh = new THREE.MeshBasicMaterial( { color: 0x111111, wireframe: true, transparent: true, opacity: 0.02} );
+const materialPoints = new THREE.PointsMaterial( { size: 0.05, color: 0x111111, transparent: true, opacity: 0.02} );
+const torusPoints = new THREE.Points( geometry, materialPoints );
+const torusMesh = new THREE.Mesh( geometry, materialMesh );
+scene.add( torusPoints ); scene.add( torusMesh );
 
 camera.position.z = 10;
 camera.position.x = 5;
@@ -28,14 +30,20 @@ var toRight = true;
 function animate() {
   requestAnimationFrame( animate );
 
-  torus.rotation.x += 0.0005;
-  torus.rotation.y += 0.0005;
+  torusMesh.rotation.x += 0.0005;
+  torusMesh.rotation.y += 0.0005;
 
-  if (torus.position.x >= 10) toRight = false;
-  if (torus.position.x <= 10) toRight = true;
+  torusPoints.rotation.x += 0.0005;
+  torusPoints.rotation.y += 0.0005;
+
+  if (torusPoints.position.x >= 10) toRight = false;
+  if (torusPoints.position.x <= 10) toRight = true;
  
-  if (toRight) torus.position.x += 0.005;
-  if (!toRight) torus.position.x -= 0.005;
+  if (toRight) torusMesh.position.x += 0.001;
+  if (!toRight) torusMesh.position.x -= 0.001;
+
+  if (toRight) torusPoints.position.x += 0.001;
+  if (!toRight) torusPoints.position.x -= 0.001; 
 
   renderer.render( scene, camera );
 }
