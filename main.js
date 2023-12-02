@@ -22,6 +22,7 @@ camera.position.z = 10;
 camera.position.x = 5;
 camera.position.y = 10;
 
+var toRight = true;
 
 // Animation
 function animate() {
@@ -30,9 +31,12 @@ function animate() {
   torus.rotation.x += 0.0005;
   torus.rotation.y += 0.0005;
 
-  if (torus.position.x >= 10) torus.position.x -= 0.005;
-  else torus.position.x += 0.005;
+  if (torus.position.x >= 10) toRight = false;
+  if (torus.position.x <= 10) toRight = true;
  
+  if (toRight) torus.position.x += 0.005;
+  if (!toRight) torus.position.x -= 0.005;
+
   renderer.render( scene, camera );
 }
 
